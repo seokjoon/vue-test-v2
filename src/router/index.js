@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import DataV from '@/views/Component/DataV'
+import FilterV from '@/views/Component/FilterV'
 
 Vue.use(VueRouter)
 
@@ -19,11 +20,17 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
+
   {
     path: '/component/data',
     name: 'Data',
     component: DataV,
-  }
+  },
+  {
+    path: '/component/filter',
+    name: 'Filter',
+    component: FilterV,
+  },
 ]
 
 const router = new VueRouter({

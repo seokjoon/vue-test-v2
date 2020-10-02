@@ -9,8 +9,7 @@
 export default {
   name: 'DataC',
   created () {
-    //const self = this; setTimeout(function() { self.ctr++; }, 500);
-    this.ctr++;
+    this.ctr++; //const self = this; setTimeout(function() { self.ctr++; }, 500);
   },
   data: () => ({ ctr: 0, }),
 }
