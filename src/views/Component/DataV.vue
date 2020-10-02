@@ -1,20 +1,17 @@
 <template>
   <div>
-    <DataC></DataC>
+    <div>{{ctr}}</div>
   </div>
 </template>
 
 
 <script>
-import DataC from '@/components/Component/DataC'
 export default {
   name: "DataV",
-  components: { DataC  },
-  data: function () {
-    return {
-
-    }
+  created () {
+    this.ctr++; //const self = this; setTimeout(function() { self.ctr++; }, 500);
   },
+  data: () => ({ ctr: 0, }),
 }
 </script>
 

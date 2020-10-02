@@ -1,13 +1,17 @@
 <template>
-  <FilterC></FilterC>
+  <div>{{ foo | head | head(3) }}</div>
 </template>
 
 
 <script>
-import FilterC from '@/components/Component/FilterC'
 export default {
   name: "FilterV",
-  components: { FilterC }
+  data: () => ({
+    foo: '012345678901234567890',
+  }),
+  filters: {
+    head: (v, len = 10) => ((typeof v === 'string') ? v.substr(0, len) : v),
+  },
 }
 </script>
 
