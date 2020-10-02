@@ -5,6 +5,7 @@
       <router-link to="/about">About</router-link> |
       <router-link to="/component/data">Data</router-link> |
       <router-link to="/component/filter">Filter</router-link> |
+      <router-link to="/component/computed">Computed</router-link> |
     </div>
     <router-view/>
   </div>

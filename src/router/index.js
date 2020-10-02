@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import DataV from '@/views/Component/DataV'
 import FilterV from '@/views/Component/FilterV'
+import ComputedV from '@/views/Component/ComputedV'
 
 Vue.use(VueRouter)
 
@@ -22,6 +23,11 @@ const routes = [
   },
 
   {
+    path: '/component/computed',
+    name: 'Computed',
+    component: ComputedV,
+  },
+  {
     path: '/component/data',
     name: 'Data',
     component: DataV,
@@ -31,6 +37,7 @@ const routes = [
     name: 'Filter',
     component: FilterV,
   },
+
 ]
 
 const router = new VueRouter({
