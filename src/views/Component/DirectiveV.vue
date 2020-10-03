@@ -1,11 +1,20 @@
 <template>
   <div>
-    <div v-bind:class="{foo: isFoo, bar: isBar}">foo</div>
-    <div v-bind:class="{foo: !(isBar)}">foo</div>
-    <div v-bind:class="c1">foo</div>
-    <div v-bind:style="{color: 'green'}">foo</div>
-    <div v-bind:style="{border: (isBar ? '1px solid red' : ''), color: 'red'}">foo</div>
-    <div v-bind:style="s1">foo</div>
+    <input type="number" v-on:input="foo.ctr = $event.target.value" v-bind:value="foo.ctr" /> | <span>{{foo.ctr}}</span>
+    <input type="number" v-on:change="foo.ctr = $event.target.value" v-bind:value="foo.ctr" /> | <span>{{foo.ctr}}</span>
+    <button @click="foo.ctr++" :disabled="isBar">ctr++</button>
+    <hr />
+    <ul> <li v-for="(v) in ['foo', 'bar']" v-bind:key="v">{{v}}</li> </ul>
+    <ul> <li v-for="(v, k) in ['foo', 'bar']" v-bind:key="k">{{k}} | {{v}}</li> </ul>
+    <ul> <li v-for="(v) in [{'foo': 'foo'}, {'foo': 'bar'}]" v-bind:key="v.foo">{{v.foo}}</li> </ul>
+    <hr />
+    <p v-bind:class="{foo: isFoo, bar: isBar}">foo</p>
+    <p v-bind:class="{foo: !(isBar)}">foo</p>
+    <p v-bind:class="c1">foo</p>
+    <p v-bind:style="{color: 'green'}">foo</p>
+    <p v-bind:style="{border: (isBar ? '1px solid red' : ''), color: 'red'}">foo</p>
+    <p v-bind:style="s1">foo</p>
+    <hr />
   </div>
 </template>
 
@@ -32,6 +41,9 @@ export default {
     setTimeout(() => { self.$data.isBar = false; }, 1000);
   },
   data: () => ({
+    foo: {
+      ctr: 0,
+    },
     isFoo: true,
     isBar: true,
   }),
