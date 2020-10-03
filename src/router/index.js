@@ -7,6 +7,7 @@ import ComputedV from '@/views/Component/ComputedV'
 import DirectiveV from '@/views/Component/DirectiveV'
 import HookV from '@/views/Component/HookV'
 import MethodV from '@/views/Component/MethodV'
+import ComponentV from '@/views/Component/ComponentV'
 
 Vue.use(VueRouter)
 
@@ -25,6 +26,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
 
+  {
+    path: '/component/component',
+    name: 'Component',
+    component: ComponentV,
+  },
   {
     path: '/component/computed',
     name: 'Computed',
@@ -52,7 +58,7 @@ const routes = [
   },
   {
     path: '/component/method',
-    name: 'Hook',
+    name: 'Method',
     component: MethodV,
   },
 ]
