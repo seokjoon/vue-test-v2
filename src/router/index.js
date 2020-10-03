@@ -5,6 +5,7 @@ import DataV from '@/views/Component/DataV'
 import FilterV from '@/views/Component/FilterV'
 import ComputedV from '@/views/Component/ComputedV'
 import DirectiveV from '@/views/Component/DirectiveV'
+import HookV from '@/views/Component/HookV'
 
 Vue.use(VueRouter)
 
@@ -42,6 +43,11 @@ const routes = [
     path: '/component/filter',
     name: 'Filter',
     component: FilterV,
+  },
+  {
+    path: '/component/hook',
+    name: 'Hook',
+    component: HookV,
   },
 
 ]
