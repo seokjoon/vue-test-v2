@@ -12,6 +12,7 @@
       <router-link to="/component/hook">Hook</router-link> |
       <router-link to="/component/method">Method</router-link> |
       <router-link to="/component/component">Component</router-link> |
+      <router-link to="/component/route">Route</router-link> |
     </div>
     <router-view/>
   </div>
