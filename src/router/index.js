@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import DataV from '@/views/Component/DataV'
 import FilterV from '@/views/Component/FilterV'
 import ComputedV from '@/views/Component/ComputedV'
+import DirectiveV from '@/views/Component/DirectiveV'
 
 Vue.use(VueRouter)
 
@@ -31,6 +32,11 @@ const routes = [
     path: '/component/data',
     name: 'Data',
     component: DataV,
+  },
+  {
+    path: '/component/directive',
+    name: 'Directive',
+    component: DirectiveV,
   },
   {
     path: '/component/filter',

@@ -3,9 +3,12 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> |
+    </div>
+    <div id="navCom">
       <router-link to="/component/data">Data</router-link> |
       <router-link to="/component/filter">Filter</router-link> |
       <router-link to="/component/computed">Computed</router-link> |
+      <router-link to="/component/directive">Directive</router-link> |
     </div>
     <router-view/>
   </div>
@@ -20,16 +23,16 @@
   color: #2c3e50;
 }
 
-#nav {
+#nav, navCom {
   padding: 30px;
 }
 
-#nav a {
+#nav, navCom a {
   font-weight: bold;
   color: #2c3e50;
 }
 
-#nav a.router-link-exact-active {
+#nav, navCom a.router-link-exact-active {
   color: #42b983;
 }
 </style>
