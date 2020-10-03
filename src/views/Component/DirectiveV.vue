@@ -1,5 +1,8 @@
 <template>
   <div>
+    <ul> <li v-for="(v) in foo.items" v-bind:key="v.k"> <input type="text" v-model="v.k" /> | {{ v.k }} </li> </ul>
+    <input type="number" v-model="foo.ctr" min="0" />
+    <hr />
     <input type="number" v-on:input="foo.ctr = $event.target.value" v-bind:value="foo.ctr" /> | <span>{{foo.ctr}}</span>
     <input type="number" v-on:change="foo.ctr = $event.target.value" v-bind:value="foo.ctr" /> | <span>{{foo.ctr}}</span>
     <button @click="foo.ctr++" :disabled="isBar">ctr++</button>
@@ -43,6 +46,7 @@ export default {
   data: () => ({
     foo: {
       ctr: 0,
+      items: [ { 'k': 'v1' }, { 'k': 'v2' } ],
     },
     isFoo: true,
     isBar: true,
