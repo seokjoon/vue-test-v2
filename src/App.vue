@@ -13,6 +13,7 @@
       <router-link to="/component/method">Method</router-link> |
       <router-link to="/component/component">Component</router-link> |
       <router-link to="/component/route">Route</router-link> |
+      <router-link to="/component/watch">Watch</router-link> |
     </div>
     <router-view/>
   </div>

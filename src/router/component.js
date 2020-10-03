@@ -6,6 +6,7 @@ import FilterV from '@/views/Component/FilterV'
 import HookV from '@/views/Component/HookV'
 import MethodV from '@/views/Component/MethodV'
 import RouteV from '@/views/Component/RouteV'
+import WatchV from '@/views/Component/WatchV'
 
 const routesComponent = [
   {
@@ -50,6 +51,17 @@ const routesComponent = [
     component: RouteV,
     name: 'Route',
     path: '/component/route',
+  },
+  {
+    component: WatchV,
+    name: 'Watch',
+    path: '/component/watch',
+    children: [
+      {
+        component: WatchV,
+        path: '/component/watch/foo',
+      },
+    ],
   },
 ];
 
