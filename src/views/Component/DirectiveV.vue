@@ -5,7 +5,7 @@
     <hr />
     <input type="number" v-on:input="foo.ctr = $event.target.value" v-bind:value="foo.ctr" /> | <span>{{foo.ctr}}</span>
     <input type="number" v-on:change="foo.ctr = $event.target.value" v-bind:value="foo.ctr" /> | <span>{{foo.ctr}}</span>
-    <button @click="foo.ctr++" :disabled="isBar">ctr++</button>
+    <button @click="foo.ctr++">ctr++</button>
     <hr />
     <ul> <li v-for="(v) in ['foo', 'bar']" v-bind:key="v">{{v}}</li> </ul>
     <ul> <li v-for="(v, k) in ['foo', 'bar']" v-bind:key="k">{{k}} | {{v}}</li> </ul>
@@ -17,6 +17,7 @@
     <p v-bind:style="{color: 'green'}">foo</p>
     <p v-bind:style="{border: (isBar ? '1px solid red' : ''), color: 'red'}">foo</p>
     <p v-bind:style="s1">foo</p>
+    <button :disabled="isBar">foo</button>
     <hr />
   </div>
 </template>

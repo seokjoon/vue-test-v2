@@ -10,6 +10,7 @@
       <router-link to="/component/computed">Computed</router-link> |
       <router-link to="/component/directive">Directive</router-link> |
       <router-link to="/component/hook">Hook</router-link> |
+      <router-link to="/component/method">Method</router-link> |
     </div>
     <router-view/>
   </div>

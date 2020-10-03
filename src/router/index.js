@@ -6,6 +6,7 @@ import FilterV from '@/views/Component/FilterV'
 import ComputedV from '@/views/Component/ComputedV'
 import DirectiveV from '@/views/Component/DirectiveV'
 import HookV from '@/views/Component/HookV'
+import MethodV from '@/views/Component/MethodV'
 
 Vue.use(VueRouter)
 
@@ -49,7 +50,11 @@ const routes = [
     name: 'Hook',
     component: HookV,
   },
-
+  {
+    path: '/component/method',
+    name: 'Hook',
+    component: MethodV,
+  },
 ]
 
 const router = new VueRouter({
