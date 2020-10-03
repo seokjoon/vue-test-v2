@@ -59,7 +59,7 @@ const routesComponent = [
     children: [
       {
         component: WatchV,
-        path: '/component/watch/foo',
+        path: 'foo',
       },
     ],
   },
