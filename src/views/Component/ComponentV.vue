@@ -1,6 +1,7 @@
 <template>
   <div>
-    <ComponentChild v-bind:foo="foo" v-bind:bar="bar"></ComponentChild>
+    <div>{{ foo }}</div>
+    <ComponentChild v-bind:foo="foo" v-bind:bar="bar" v-on:setFoo="setFoo"></ComponentChild>
   </div>
 </template>
 
@@ -14,6 +15,11 @@ export default {
     foo: 'foo',
     bar: [ { k: 1 }, { k: 2 } ],
   }),
+  methods: {
+    setFoo(v) {
+      this.foo = v;
+    },
+  },
 }
 </script>
 
