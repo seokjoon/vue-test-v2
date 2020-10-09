@@ -7,6 +7,7 @@
     <div id="navDis">
       <router-link to="/display/filter">Filter</router-link> |
       <router-link to="/display/directive">Directive</router-link> |
+      <router-link to="/display/slot">Slot</router-link>
     </div>
     <div id="navCom">
       <router-link to="/component/data">Data</router-link> |
