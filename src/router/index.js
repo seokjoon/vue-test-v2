@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import routesComponent from '@/router/component'
+import routesDisplay from '@/router/display'
 
 Vue.use(VueRouter)
 
@@ -20,6 +21,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
 
+  ...routesDisplay,
   ...routesComponent,
 ]
 

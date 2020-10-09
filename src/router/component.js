@@ -1,19 +1,12 @@
-import ComponentV from '@/views/Component/ComponentV'
 import ComputedV from '@/views/Component/ComputedV'
+import EventV from '@/views/Component/EventV'
 import DataV from '@/views/Component/DataV'
-import DirectiveV from '@/views/Component/DirectiveV'
-import FilterV from '@/views/Component/FilterV'
 import HookV from '@/views/Component/HookV'
 import MethodV from '@/views/Component/MethodV'
 import RouteV from '@/views/Component/RouteV'
 import WatchV from '@/views/Component/WatchV'
 
 const routesComponent = [
-  {
-    component: ComponentV,
-    name: 'Component',
-    path: '/component/component',
-  },
   {
     component: ComputedV,
     name: 'Computed',
@@ -25,14 +18,9 @@ const routesComponent = [
     path: '/component/data',
   },
   {
-    component: DirectiveV,
-    name: 'Directive',
-    path: '/component/directive',
-  },
-  {
-    component: FilterV,
-    name: 'Filter',
-    path: '/component/filter',
+    component: EventV,
+    name: 'Event',
+    path: '/component/event',
   },
   {
     component: HookV,

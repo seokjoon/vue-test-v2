@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "ComponentChild",
+  name: "EventChild",
   data: () => ({
     fooChild: '',
   }),

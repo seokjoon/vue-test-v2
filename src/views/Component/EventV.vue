@@ -1,16 +1,16 @@
 <template>
   <div>
     <div>{{ foo }}</div>
-    <ComponentChild v-bind:foo="foo" v-bind:bar="bar" v-on:setFoo="setFoo"></ComponentChild>
+    <EventChild v-bind:foo="foo" v-bind:bar="bar" v-on:setFoo="setFoo"></EventChild>
   </div>
 </template>
 
 
 <script>
-import ComponentChild from '@/components/Component/ComponentChild'
+import EventChild from '@/components/Component/EventChild'
 export default {
-  name: "ComponentV",
-  components: { ComponentChild },
+  name: "EventV",
+  components: { EventChild },
   data: () => ({
     foo: 'foo',
     bar: [ { k: 1 }, { k: 2 } ],
