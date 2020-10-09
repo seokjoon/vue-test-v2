@@ -1,13 +1,13 @@
 <template>
-  <button>
-    <slot>foo</slot>
-  </button>
+  <div>
+    <slot>aa</slot>
+  </div>
 </template>
 
 
 <script>
 export default {
-  name: "SlotBtn",
+  name: "SlotSingle",
 }
 </script>
 

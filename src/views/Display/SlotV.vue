@@ -1,16 +1,27 @@
 <template>
   <div>
-    <SlotBtn></SlotBtn>
-    <SlotBtn>bar</SlotBtn>
+    <SlotSingle></SlotSingle>
+    <SlotSingle>AA</SlotSingle>
+    <hr />
+    <SlotName></SlotName>
+    <hr />
+    <SlotName>
+      <div slot="aa">AA</div>
+      <div>BB</div>
+    </SlotName>
   </div>
 </template>
 
 
 <script>
-import SlotBtn from '@/components/Display/SlotBtn'
+import SlotName from '@/components/Display/SlotName'
+import SlotSingle from '@/components/Display/SlotSingle'
 export default {
   name: "SlotV",
-  components: { SlotBtn },
+  components: {
+    SlotSingle,
+    SlotName,
+  },
 }
 </script>
 
