@@ -5,8 +5,8 @@
       <router-link to="/about">About</router-link> |
     </div>
     <div id="navDis">
-      <router-link to="/display/filter">Filter</router-link> |
       <router-link to="/display/directive">Directive</router-link> |
+      <router-link to="/display/filter">Filter</router-link> |
       <router-link to="/display/slot">Slot</router-link> |
       <router-link to="/display/style">Style</router-link> |
     </div>
@@ -20,7 +20,8 @@
       <router-link to="/component/watch">Watch</router-link> |
     </div>
     <div id="navData">
-      <router-link to="/data/mixin">Mixin</router-link>
+      <router-link to="/data/mixin">Mixin</router-link> |
+      <router-link to="/data/store">Store</router-link> |
     </div>
     <router-view/>
   </div>

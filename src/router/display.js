@@ -3,7 +3,7 @@ import DirectiveV from '@/views/Display/DirectiveV'
 import SlotV from '@/views/Display/SlotV'
 import StyleV from '@/views/Display/StyleV'
 
-const routesDisplay = [
+const displayRoute = [
   {
     component: DirectiveV,
     name: 'Directive',
@@ -26,4 +26,4 @@ const routesDisplay = [
   },
 ];
 
-export default routesDisplay;
+export default displayRoute;

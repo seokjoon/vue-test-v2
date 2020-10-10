@@ -1,6 +1,6 @@
 import MixinV from '@/views/Data/MixinV'
 
-const routesData = [
+const dataRoute = [
   {
     component: MixinV,
     name: 'Mixin',
@@ -8,4 +8,4 @@ const routesData = [
   }
 ];
 
-export default routesData;
+export default dataRoute;

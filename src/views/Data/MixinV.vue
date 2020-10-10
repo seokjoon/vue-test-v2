@@ -1,13 +1,13 @@
 <template>
   <div>
-    <button @click="getFoo">getFoo</button>
-    <button @click="getGlobalFoo">getGlobalFoo</button>
+    <button @click="getFooMixinFoo">getFooMixinFoo</button>
+    <button @click="getMixinFoo">getMixinFoo</button>
   </div>
 </template>
 
 
 <script>
-import { FooMixin } from '@/mixins/FooMixin'
+import { FooMixin } from '@/mixins/foo'
 
 export default {
   name: "MixinV",

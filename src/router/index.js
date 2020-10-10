@@ -1,9 +1,11 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import routesComponent from '@/router/component'
-import routesDisplay from '@/router/display'
-import routesData from '@/router/data'
+
+import componentRoute from '@/router/component'
+import displayRoute from '@/router/display'
+import dataRoute from '@/router/data'
+import storeRoute from '@/router/store'
 
 Vue.use(VueRouter)
 
@@ -22,9 +24,10 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
   },
 
-  ...routesComponent,
-  ...routesDisplay,
-  ...routesData,
+  ...componentRoute,
+  ...dataRoute,
+  ...displayRoute,
+  ...storeRoute
 ]
 
 const router = new VueRouter({

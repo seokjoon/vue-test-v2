@@ -6,7 +6,7 @@ import MethodV from '@/views/Component/MethodV'
 import RouteV from '@/views/Component/RouteV'
 import WatchV from '@/views/Component/WatchV'
 
-const routesComponent = [
+const componentRoute = [
   {
     component: ComputedV,
     name: 'Computed',
@@ -53,4 +53,4 @@ const routesComponent = [
   },
 ];
 
-export default routesComponent;
+export default componentRoute;
