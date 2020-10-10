@@ -1,6 +1,7 @@
 import FilterV from '@/views/Display/FilterV'
 import DirectiveV from '@/views/Display/DirectiveV'
 import SlotV from '@/views/Display/SlotV'
+import StyleV from '@/views/Display/StyleV'
 
 const routesDisplay = [
   {
@@ -17,6 +18,11 @@ const routesDisplay = [
     component: SlotV,
     name: 'Slot',
     path: '/display/slot',
+  },
+  {
+    component: StyleV,
+    name: 'Style',
+    path: '/display/style',
   },
 ];
 

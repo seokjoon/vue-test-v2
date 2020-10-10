@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "SingleFileV",
+  name: "StyleV",
 }
 </script>
 
