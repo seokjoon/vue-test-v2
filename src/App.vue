@@ -18,6 +18,9 @@
       <router-link to="/component/route">Route</router-link> |
       <router-link to="/component/watch">Watch</router-link> |
     </div>
+    <div id="navData">
+      <router-link to="/data/mixin">Mixin</router-link>
+    </div>
     <router-view/>
   </div>
 </template>

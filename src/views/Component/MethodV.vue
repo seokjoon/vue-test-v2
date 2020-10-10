@@ -9,8 +9,11 @@
 <script>
 export default {
   name: "MethodV",
+  data: () => ({
+    fee: 'fee',
+  }),
   methods: {
-    foo: function() { console.log('foo'); },
+    foo: function() { console.log('foo', this.fee); },
     bar: function($event, foo) { console.log($event); console.log(foo); },
   },
 }
