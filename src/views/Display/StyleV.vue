@@ -2,6 +2,7 @@
   <div>
     <span class="foo">foo</span>
     <span class="bar">bar</span>
+    <span :class="$style.fee">fee</span>
   </div>
 </template>
 
@@ -23,3 +24,8 @@ export default {
     color: coral;
   }
 </style> <!-- global -->
+<style module>
+  .fee {
+    color: cornflowerblue;
+  }
+</style>
