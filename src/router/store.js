@@ -5,6 +5,13 @@ const storeRoute = [
     component: StoreV,
     name: 'Store',
     path: '/data/store',
+    children: [
+      {
+        component: StoreV,
+        name: 'StoreItem',
+        path: ':id',
+      },
+    ],
   },
 ];
 

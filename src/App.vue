@@ -22,6 +22,7 @@
     <div id="navData">
       <router-link to="/data/mixin">Mixin</router-link> |
       <router-link to="/data/store">Store</router-link> |
+      <router-link to="/data/store/3">StoreItem</router-link> |
     </div>
     <router-view/>
   </div>
